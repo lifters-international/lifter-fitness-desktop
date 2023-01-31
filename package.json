@@ -1,0 +1,103 @@
+{
+  "name": "lifter-fitness",
+  "version": "1.0.0",
+  "description": "Desktop Application fro Lifter-Fitness",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "npx electron-forge package",
+    "make": "electron-forge make",
+    "publish": "npx electron-forge publish",
+    "postinstall": "npx electron-builder install-app-deps",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "release": "electron-builder --publish always"
+  },
+  "repository": "https://github.com/lifters-international/lifter-fitness-desktop",
+  "devDependencies": {
+    "electron": "^22.1.0",
+    "@electron-forge/cli": "^6.0.0-beta.57",
+    "@electron-forge/maker-deb": "^6.0.0-beta.57",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+    "@electron-forge/maker-zip": "^6.0.0-beta.61",
+    "@electron-forge/publisher-github": "^6.0.0-beta.61",
+    "electron-builder": "22.10.5"
+  },
+  "dependencies": {
+    "update-electron-app": "^2.0.1",
+    "auto-launch": "^5.0.5",
+    "electron-builder-squirrel-windows": "^23.3.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^5.0.5",
+    "string-similarity": "^4.0.4"
+  },
+
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "LifterFitness"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ],
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "lifters-international",
+              "name": "lifter-fitness-desktop",
+              "type": "git",
+              "url": "https://github.com/lifters-international/lifter-fitness-desktop.git"
+            }
+          },
+          "draft": true
+        }
+      ]
+    }
+  },
+
+  "build": {
+    "productName": "LifterFitness",
+    "copyright": "Copyright © 2023 ${author}",
+    "linux": {
+      "icon": "src/icons/Icons/lifters-icon-rounded.png",
+      "category": "Health & Fitness",
+      "publish": [
+        "github"
+      ],
+      "target": "AppImage"
+    },
+    "mac": {
+      "icon": "src/icons/Icons/lifters-icon-rounded.png",
+      "category": "public.app-category.health-fitness",
+      "publish": [
+        "github"
+      ]
+    },
+    "win": {
+      "icon": "src/icons/Icons/lifters-icon-rounded.png",
+      "publish": [
+        "github"
+      ]
+    }
+  }
+}
