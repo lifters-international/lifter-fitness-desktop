@@ -1,5 +1,5 @@
 {
-  "description": "A foundation for scalable desktop apps",
+  "description": "Desktop application for Lifter-Fitness",
   "keywords": [
     "electron",
     "boilerplate",
@@ -11,25 +11,25 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://trainers.lifters.app",
   "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
+    "url": "https://github.com/lifters-international/lifter-fitness-desktop/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/lifters-international/lifter-fitness-desktop.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "name": "Lifters International",
+    "email": "admins@lifters.app",
+    "url": "https://business.lifters.app"
   },
   "contributors": [
     {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
+      "name": "Chidozie Nnaji",
+      "email": "codingwithcn@gmail.com",
+      "url": "https://codingwithcn.me"
     }
   ],
   "main": "./src/main/main.ts",
@@ -186,8 +186,8 @@
     "webpack-merge": "^5.8.0"
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.erb.ElectronReact",
+    "productName": "LifterFitness",
+    "appId": "com.lifters.international.lifters.fitness",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [
@@ -245,8 +245,8 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "electron-react-boilerplate",
-      "repo": "electron-react-boilerplate"
+      "owner": "lifters-international",
+      "repo": "lifter-fitness-desktop"
     }
   },
   "collective": {
