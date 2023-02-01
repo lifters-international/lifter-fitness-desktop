@@ -13,6 +13,7 @@
     "dist": "electron-builder",
     "release": "electron-builder --publish always"
   },
+  "author": "Lifters International",
   "repository": "https://github.com/lifters-international/lifter-fitness-desktop",
   "devDependencies": {
     "electron": "^22.1.0",
