@@ -157,13 +157,6 @@
   dependencies:
     "@electron-forge/shared-types" "6.0.5"
 
-"@electron-forge/publisher-base@6.0.5", "@electron-forge/publisher-base@^6.0.4":
-  version "6.0.5"
-  resolved "https://registry.yarnpkg.com/@electron-forge/publisher-base/-/publisher-base-6.0.5.tgz#b857a8ac2022d13ed4ab0ef93466fe5d22be9513"
-  integrity sha512-gwOaMC3RKPO1mq3dqP9ko8kJptO41XU+I+pM66W/wvCNIQzisFCqrsx3d8A9RWsMJug0I1xNsYdBt99j1/2haA==
-  dependencies:
-    "@electron-forge/shared-types" "6.0.5"
-
 "@electron-forge/publisher-github@^6.0.5":
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/@electron-forge/publisher-github/-/publisher-github-6.0.5.tgz#b1db448b350db01a11fd792c3f6bbf7b00bafd26"
@@ -1547,10 +1540,10 @@ electron-winstaller@^5.0.0:
     lodash.template "^4.2.2"
     temp "^0.9.0"
 
-electron@^23.0.0:
-  version "23.0.0"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-23.0.0.tgz#4da457d7585149bb1a98ea8bddb286e72322a309"
-  integrity sha512-S6hVtTAjauMiiWP9sBVR5RpcUC464cNZ06I2EMUjeZBq+KooS6tLmNsfw0zLpAXDp1qosjlBP3v71NTZ3gd9iA==
+electron@^23.2.1:
+  version "23.2.1"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-23.2.1.tgz#c1dcf080dcec1d39a3881aa0bbaeb6593abaa52b"
+  integrity sha512-rPxETyl0u1zxgPzVTtmJZ+en3NjbrqTF7iO4olvmwUnK98Dsp/HFvvzRPb79DrRu+pyFg0A197WiMqPWH2WvvQ==
   dependencies:
     "@electron/get" "^2.0.0"
     "@types/node" "^16.11.26"
